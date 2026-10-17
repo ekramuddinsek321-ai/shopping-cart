@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>Shopping Cart</h1>
+        <span class="badge">Items: <strong id="cart-count">0</strong></span>
+      </header>
+
+      <section class="card" aria-labelledby="products-title">
+        <h2 id="products-title">Products</h2>
+        <div id="product-list"></div>
+      </section>
+
+      <section class="card" aria-labelledby="cart-title">
+        <h2 id="cart-title">Your Cart</h2>
+        <p id="empty-cart">Your cart is empty.</p>
+        <div id="cart-items"></div>
+        <div id="cart-total" class="hidden">
+          <p class="total-row">
+            Total: <strong id="total-price">$0.00</strong>
+          </p>
+          <button id="checkout-btn" type="button" class="btn btn-success">
+            Checkout
+          </button>
+        </div>
+      </section>
+
+      <p id="status-message" role="status" aria-live="polite"></p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
